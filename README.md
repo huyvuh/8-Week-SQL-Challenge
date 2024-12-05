@@ -45,7 +45,7 @@ GROUP BY customer_id
 ORDER BY customer_id;
 ```
 
-### Reason:
+#### Reason:
 - **JOIN** can merge the `sales` and `menu` tables into a new table with two collumns: `customer_id` and `price`.
 - **SUM** can calculate the total sales contributed by each customer.
 - **GROUP** the aggregated results by `customer_id`. 
@@ -73,7 +73,7 @@ FROM sales
 GROUP BY customer_id;
 ```
 
-### Reason:
+#### Reason:
 - **COUNT(DISTINCT)** is used to remove double counted
 
 #### Result:
