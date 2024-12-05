@@ -33,7 +33,7 @@ Danny wants to analyze customer data to understand their spending habits and fav
 
 
 ## Question and Solution
-**1. What is the total amount each customer spent at the restaurant?**
+**1️⃣. What is the total amount each customer spent at the restaurant?**
 
 ```sql
 SELECT 
@@ -63,7 +63,7 @@ ORDER BY customer_id;
 
 ***
 
-**2. How many days has each customer visited the restaurant?**
+**2️⃣. How many days has each customer visited the restaurant?**
 
 ```sql
 SELECT 
@@ -89,4 +89,4 @@ GROUP BY customer_id;
 
 ***
 
-**3. What was the first item from the menu purchased by each customer?**
+**3️⃣. What was the first item from the menu purchased by each customer?**
