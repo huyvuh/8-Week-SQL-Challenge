@@ -1,4 +1,4 @@
-This case is sourced from: [Link](https://8weeksqlchallenge.com/case-study-1/).
+This case is sourced from: [here](https://8weeksqlchallenge.com/case-study-1/).
 
 ***
 
