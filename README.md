@@ -92,23 +92,21 @@ GROUP BY customer_id;
 **3️⃣. What was the first item from the menu purchased by each customer?**
 
 ```sql
-WITH first_order_sale AS 
-	(
-      SELECT
+WITH first_order_sale AS (
+      	SELECT
       	sales.customer_id, 
       	sales.order_date, 
       	menu.product_name, 
       	DENSE_RANK() OVER ( PARTITION BY  sales.customer_id  ORDER BY sales.order_date) AS rank
       	FROM dannys_diner.sales 
       	INNER JOIN dannys_diner.menu 
-      		ON sales.product_id = menu.product_id
-      )
+      		ON sales.product_id = menu.product_id )
       	
- 	SELECT
-    	first_order_sale.customer_id, 
-        first_order_sale.product_name
-        FROM first_order_sale
-        where rank = 1
+	SELECT
+	first_order_sale.customer_id, 
+	first_order_sale.product_name
+	FROM first_order_sale
+	where rank = 1
 ```
 #### Result:
 | customer_id | product_name |
